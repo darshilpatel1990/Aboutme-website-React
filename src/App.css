@@ -30,10 +30,35 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
+
+/* HEADER */
+
+#Logo {
+  float: left;
+  max-width: 4em;
+  max-height: 4em;
+}
+
+.jumbotron {
+  height: 170px;
+  padding: 30px;
+}
+
+.nav-link {
+  font-size: large;
+  font-weight:400;
+}
+
+/* NavItem > .nav-link > :active {
+  /* color: black;
+  border-bottom: 1px solid rgb(15, 15, 15);
+} */
