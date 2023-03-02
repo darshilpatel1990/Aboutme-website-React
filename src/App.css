@@ -43,7 +43,6 @@
 /* HEADER */
 
 #Logo {
-  float: left;
   max-width: 4em;
   max-height: 4em;
 }
@@ -62,3 +61,8 @@
   /* color: black;
   border-bottom: 1px solid rgb(15, 15, 15);
 } */
+
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0;
+};

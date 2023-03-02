@@ -1,0 +1,9 @@
+#imgFun {
+    width: 16em;
+    height: 17em
+};
+
+.card-img-top {
+    max-width: 10em;
+    max-height: 10em
+};

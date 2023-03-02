@@ -1,8 +1,9 @@
 import { Container } from "reactstrap";
 import SubHeader from "../components/SubHeader";
 import Introduction from "../features/Homepageitems/Introduction";
+import Projects from "../features/Homepageitems/Projects";
 import Services from "../features/Homepageitems/Services";
-import './Home.css';
+import './HomePage.css';
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             {/* <SubHeader current='Home' /> */}
             <Introduction />
             <Services />
+            <Projects />
         </Container>
     );
 };
