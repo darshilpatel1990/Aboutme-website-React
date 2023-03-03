@@ -62,7 +62,15 @@
   border-bottom: 1px solid rgb(15, 15, 15);
 } */
 
+/* FOOTER */
+
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
+  background-image: linear-gradient(#fad178, rgb(248, 233, 201));
   padding: 20px 0;
-};
+}
+
+.linkfont {
+  padding: 4px;
+}
+
+
