@@ -16,7 +16,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar light color='primary' className='jumbotron' sticky='top' expand='md'>
+        <Navbar light id='navbar' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
                 <Row>
                     <Col>
@@ -27,7 +27,9 @@ const Header = () => {
                     </Col>
                 </Row>
             </NavbarBrand>
+
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
+
             <Collapse isOpen={menuOpen} navbar>
                 <Nav id='dpNavbar' className='ms-auto' navbar>
                     <NavItem>
