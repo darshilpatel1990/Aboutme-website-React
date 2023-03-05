@@ -8,17 +8,17 @@ const Footer = () => {
                 <Row>
                     <Col xs='3' md='2' className="offset-1">
                         <ul className="list-unstyled">
-                            <li className="linkfont">
-                                <Link to='/'>Home</Link>
+                            <li className="linkContent">
+                                <Link to="/" className="linkFont">Home</Link>
                             </li>
-                            <li className="linkfont">
-                                <Link to='/skills'>Skills</Link>
+                            <li className="linkContent">
+                                <Link to="/skills" className="linkFont">Skills</Link>
                             </li>
-                            <li className="linkfont">
-                                <Link to='/funfacts'>Funfacts</Link>
+                            <li className="linkContent">
+                                <Link to="/funfacts" className="linkFont">Funfacts</Link>
                             </li>
-                            <li className="linkfont">
-                                <Link to='/contact'>Contact</Link>
+                            <li className="linkContent">
+                                <Link to="/contact" className="linkFont">Contact</Link>
                             </li>
                         </ul>
                     </Col>
@@ -37,10 +37,10 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col xs='3' md='4' className="text-center">
-                        <a role="button" className="btn btn-link" href="tel:+12042186227" target="_blank" style={{color: "black"}}>
+                        <a role="button" className="btn" href="tel:+12042186227" target="_blank">
                             <i className="fa fa-phone text-dark" /> Phone
                         </a><br />
-                        <a role="button" className="btn btn-link" href="mailto:darshilpatel1990@gmail.com" target="_blank" style={{color: "black"}}>
+                        <a role="button" className="btn" href="mailto:darshilpatel1990@gmail.com" target="_blank">
                             <i className="fa fa-envelope-o text-dark" /> Email
                         </a>
                     </Col>

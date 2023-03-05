@@ -9,6 +9,10 @@
 
 /* HEADER */
 
+#nameHeader {
+  color: rgb(129, 50, 123);
+}
+
 #Logo {
   max-width: 4em;
   max-height: 4em;
@@ -24,10 +28,14 @@
   font-weight:400;
 }
 
-/* NavItem > .nav-link > :active {
-  /* color: black;
-  border-bottom: 1px solid rgb(15, 15, 15);
+/* .nav-link:hover {
+  border-bottom: 1px solid rgb(27, 26, 26);
 } */
+
+.bodyText {
+  text-align: start;
+}
+
 
 /* FOOTER */
 
@@ -36,6 +44,12 @@
   padding: 20px 0;
 }
 
-.linkfont {
+.linkContent {
   padding: 4px;
+}
+
+.linkFont {
+  color: black;
+  text-decoration: none;
+  font-size: 18 px;
 }

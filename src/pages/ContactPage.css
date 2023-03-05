@@ -1,0 +1,10 @@
+.formHeader {
+    font-size: 30px;
+    font-weight: 400;
+    color: #4a2070;
+    text-align: left
+};
+
+Button {
+    margin-right: auto;
+};

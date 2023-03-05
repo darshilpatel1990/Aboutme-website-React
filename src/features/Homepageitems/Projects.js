@@ -12,16 +12,16 @@ const Projects = () => {
             </Col>
             <Col xs='12' md='5' lg='6' className="align-self-center">
                 <h4 className="bodyh4 mb-3"><u>Nucampsite Website</u></h4>
-                <h5>A fictional website completely based on Bootstrap and some Javascript code</h5>
-                <ul>
+                <h5 className="bodyText">A fictional website completely based on Bootstrap and some Javascript code</h5>
+                <ul className="bodyText">
                     <li>Web Design</li>
                     <li>Web Development</li>
                 </ul>
                 <br />
                 <h5 className="mb-3"><u>Details</u></h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem illum, illo autem cupiditate magnam fugit ullam velit voluptate sequi adipisci et consequuntur repellendus excepturi, dolor, nobis impedit doloribus! Dignissimos, soluta.</p>
+                <p className="bodyText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem illum, illo autem cupiditate magnam fugit ullam velit voluptate sequi adipisci et consequuntur repellendus excepturi, dolor, nobis impedit doloribus! Dignissimos, soluta.</p>
                 <br />
-                <p>for more details & code, visit <a className="textlink" href="https://github.com/darshilpatel1990/nucampsite">Github</a></p>
+                <p>For more details & code, visit <a className="textlink" href="https://github.com/darshilpatel1990/nucampsite">Github</a></p>
             </Col>
         </Row>
     );

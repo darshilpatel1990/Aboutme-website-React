@@ -23,7 +23,7 @@ const Header = () => {
                         <img src={Whitelogo} alt='logo' id='Logo' className='float-start' />
                     </Col>
                     <Col>
-                        <h1 className='mt-3'>Darshil Patel</h1>
+                        <h1 id='nameHeader' className='mt-3'>Darshil Patel</h1>
                     </Col>
                 </Row>
             </NavbarBrand>
