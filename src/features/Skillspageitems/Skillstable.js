@@ -2,7 +2,7 @@ import { Row, Col } from "reactstrap";
 
 const Skillstable = () => {
     return (
-        <Row class="no-gutters mb-5">
+        <Row className="my-5">
             <Col>
                 <div className="card cardskills text-center">
                     <div className="card-header">
