@@ -2,3 +2,25 @@
     width: 16em;
     height: 16em;
 }
+
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-home {
+    padding: 1px;
+    height: 100%;
+}
+
+.card-home:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#nucampWeb {
+    border-radius: 8px;
+}
+
+#nucampWeb:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

@@ -1,14 +1,14 @@
-import { Row, Col } from "reactstrap";
+import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 
 const Skillstable = () => {
     return (
         <Row className="my-5">
-            <Col>
-                <div className="card cardskills text-center">
-                    <div className="card-header">
+            <Col md='4'>
+                <Card className="card-skills text-center">
+                    <CardHeader>
                         Frontend Developer
-                    </div>
-                    <div className="card-body">
+                    </CardHeader>
+                    <CardBody>
                         <p>I like to code from scratch and like to bring new ideas to websites.</p>
                         <br />
                         <p className="card-text">Frontend Languages I use for coding:</p>
@@ -22,15 +22,15 @@ const Skillstable = () => {
                         <p>React native</p>
                         <p>Jquery</p>
                         <p>Codepen</p>
-                    </div>
-                </div>
+                    </CardBody>
+                </Card>
             </Col>
-            <Col>
-                <div className="card cardskills text-center">
-                    <div className="card-header">
+            <Col md='4'>
+                <Card className="card-skills text-center">
+                    <CardHeader>
                         Backend Developer
-                    </div>
-                    <div className="card-body">
+                    </CardHeader>
+                    <CardBody>
                         <p>I like to build and maintain the mechanisms that process data and perform
                             actions on websites.</p>
                         <br />
@@ -44,15 +44,15 @@ const Skillstable = () => {
                         <p>Docker</p>
                         <p>Kubernetes</p>
                         <p>Insomnia</p>
-                    </div>
-                </div>
+                    </CardBody>
+                </Card>
             </Col>
-            <Col>
-                <div className="card cardskills text-center">
-                    <div className="card-header">
+            <Col md='4'>
+                <Card className="card-skills text-center">
+                    <CardHeader>
                         Web Designer
-                    </div>
-                    <div className="card-body">
+                    </CardHeader>
+                    <CardBody>
                         <p>I like to make unique yet user friendly web designs.</p>
                         <br />
                         <p className="card-text">Things I design:</p>
@@ -64,8 +64,8 @@ const Skillstable = () => {
                         <p>Figma</p>
                         <p>Moqups</p>
                         <p>Proto.io</p>
-                    </div>
-                </div>
+                    </CardBody>
+                </Card>
             </Col>
         </Row>
     );

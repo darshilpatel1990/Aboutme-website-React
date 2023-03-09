@@ -1,4 +1,4 @@
-import { Row, Col } from "reactstrap";
+import { Row, Col, Carousel } from "reactstrap";
 import nature from '../../app/assets/img/nature.jpg';
 import lakelouise from '../../app/assets/img/lakelouise.JPG';
 import banff from '../../app/assets/img/banff.png';
@@ -11,7 +11,31 @@ const Photodisplay = () => {
                 <h3 className="bodyh3 text-center mb-3">Along the way...</h3>
             </Col>
             <Col md='8' className="mx-auto">
-                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                
+                {/* <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={nature}
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={lakelouise}
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={banff}
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+                </Carousel> */}
+                {/* <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                   /      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -40,7 +64,7 @@ const Photodisplay = () => {
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="sr-only">Next</span>
                     </a>
-                </div>
+                </div> */}
             </Col>
         </Row>
     );
