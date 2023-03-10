@@ -1,4 +1,4 @@
-import { Row, Col, Collapse } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import nucampwebsite from '../../app/assets/img/nucampwebsite.png';
 
 const Projects = () => {
@@ -21,7 +21,7 @@ const Projects = () => {
                 <h5 className="mb-3"><u>Details</u></h5>
                 <p className="bodyText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem illum, illo autem cupiditate magnam fugit ullam velit voluptate sequi adipisci et consequuntur repellendus excepturi, dolor, nobis impedit doloribus! Dignissimos, soluta.</p>
                 <br />
-                <p>For more details & code, visit <a className="textlink" href="https://github.com/darshilpatel1990/nucampsite">Github</a></p>
+                <p>For more details & code, visit <a className="textlink" href="https://github.com/darshilpatel1990/nucampsite" target="_blank">Github</a></p>
             </Col>
         </Row>
     );

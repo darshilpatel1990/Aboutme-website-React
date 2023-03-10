@@ -7,3 +7,9 @@
     max-width: 10em;
     max-height: 10em
 };
+
+.imageCRSL {
+    display: block;
+    height: 400px;
+    width: 800px;
+}

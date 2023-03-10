@@ -1,70 +1,76 @@
-import { Row, Col, Carousel } from "reactstrap";
-import nature from '../../app/assets/img/nature.jpg';
-import lakelouise from '../../app/assets/img/lakelouise.JPG';
-import banff from '../../app/assets/img/banff.png';
-import Banfftrip from '../../app/assets/img/Banfftrip.JPG';
+import { Row, Col, Carousel, CarouselControl, CarouselItem, CarouselIndicators } from "reactstrap";
+import { useState } from "react";
+import { CarouselItems } from "../../app/shared/Carouselitems";
 
 const Photodisplay = () => {
+
+    // State for Active index
+    const [activeIndex, setActiveIndex] = useState(0);
+  
+    // State for Animation
+    const [animating, setAnimating] = useState(false);
+
+    const lastItemindex = CarouselItems.length - 1
+
+    // Previous button for Carousel
+    const previousButton = () => {
+        if (animating) return;
+        const nextIndex = (activeIndex === 0) ? lastItemindex : activeIndex - 1;
+        setActiveIndex(nextIndex);
+    };
+
+    // Next button for Carousel
+    const nextButton = () => {
+        if (animating) return;
+        const nextIndex = (activeIndex === lastItemindex) ? 0 : activeIndex + 1;
+        setActiveIndex(nextIndex);
+    };
+
+    // Carousel Item Data
+    const CarouselItemData = CarouselItems.map((item) => {
+        return (
+            <CarouselItem
+                key={item.src}
+                onExited={() => setAnimating(false)}
+                onExiting={() => setAnimating(true)}
+                id="carouselItem"
+            >
+                <img className="imageCRSL" src={item.src} alt={item.altText} />
+            </CarouselItem>
+        );
+    });
+
     return (
         <Row className="my-5">
             <Col xs='12'>
-                <h3 className="bodyh3 text-center mb-3">Along the way...</h3>
+                <h3 className="bodyh3 text-center mb-5">Along the way...</h3>
             </Col>
             <Col md='8' className="mx-auto">
-                
-                {/* <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={nature}
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={lakelouise}
-                            alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={banff}
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
-                </Carousel> */}
-                {/* <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                  /      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="d-block w-100" src={nature} alt="First slide" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src={Banfftrip} alt="Second slide" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src={lakelouise} alt="Third slide" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src={banff} alt="Fourth slide" />
-                        </div>
-                    </div>
-                    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Next</span>
-                    </a>
-                </div> */}
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={nextButton}
+                    previous={previousButton}
+                >
+                    <CarouselIndicators 
+                        items={CarouselItems}
+                        activeIndex={activeIndex}
+                        onClickHandler={(newIndex) => {
+                            if (animating) return;
+                            setActiveIndex(newIndex);
+                        }}
+                    />
+                    {CarouselItemData}
+                    <CarouselControl 
+                        directionText="Prev"
+                        direction="prev" 
+                        onClickHandler={previousButton} 
+                    />
+                    <CarouselControl 
+                        directionText="Next"
+                        direction="next" 
+                        onClickHandler={nextButton} 
+                    />
+                </Carousel>
             </Col>
         </Row>
     );
