@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col, Popover, PopoverHeader, PopoverBody, Card, CardImg, CardTitle, CardBody, Button } from "reactstrap";
-import web_design from '../../src/app/assets/img/web_design.png';
+import web_design from '../../app/assets/img/web_design.png';
 
 const WebdesignDetails = () => {
     const [popoverOpen, setPopoverOpen] = useState(false);

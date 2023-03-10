@@ -1,8 +1,8 @@
 import { Row, Col } from "reactstrap";
-import FrontendDetails from "../../utils/Frontenddetails";
-import BackendDetails from "../../utils/Backenddetails";
-import WebdesignDetails from "../../utils/Webdesigndetails";
-import MobileappDetails from "../../utils/Mobileappdetails";
+import FrontendDetails from "./Frontenddetails"
+import BackendDetails from "./Backenddetails";
+import WebdesignDetails from "./Webdesigndetails";
+import MobileappDetails from "./Mobileappdetails";
 
 const Services = () => {
     return (

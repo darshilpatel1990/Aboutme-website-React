@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col, Popover, PopoverHeader, PopoverBody, Card, CardImg, CardTitle, CardBody, Button } from "reactstrap";
-import mobileapp from '../../src/app/assets/img/mobileapp.png';
+import mobileapp from '../../app/assets/img/mobileapp.png';
 
 const MobileappDetails = () => {
     const [popoverOpen, setPopoverOpen] = useState(false);

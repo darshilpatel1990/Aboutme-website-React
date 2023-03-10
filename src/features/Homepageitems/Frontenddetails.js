@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col, Popover, PopoverHeader, PopoverBody, Card, CardImg, CardTitle, CardBody, Button } from "reactstrap";
-import Frontend_dev from '../../src/app/assets/img/Frontend_dev.png';
+import Frontend_dev from '../../app/assets/img/Frontend_dev.png';
 
 const FrontendDetails = () => {
     const [popoverOpen, setPopoverOpen] = useState(false);
