@@ -4,9 +4,14 @@
 };
 
 .card-img-top {
-    max-width: 10em;
-    max-height: 10em
+    width: 5em;
+    height: 5em
 };
+
+#carouselItem {
+    height: 400px;
+    width: 800px;
+}
 
 .imageCRSL {
     display: block;

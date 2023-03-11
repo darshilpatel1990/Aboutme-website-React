@@ -5,10 +5,10 @@ const Skillstable = () => {
         <Row className="my-5">
             <Col md='4'>
                 <Card className="card-skills text-center">
-                    <CardHeader>
+                    <CardHeader className="card-header">
                         Frontend Developer
                     </CardHeader>
-                    <CardBody>
+                    <CardBody className="card-body">
                         <p>I like to code from scratch and like to bring new ideas to websites.</p>
                         <br />
                         <p className="card-text">Frontend Languages I use for coding:</p>
@@ -27,10 +27,10 @@ const Skillstable = () => {
             </Col>
             <Col md='4'>
                 <Card className="card-skills text-center">
-                    <CardHeader>
+                    <CardHeader className="card-header">
                         Backend Developer
                     </CardHeader>
-                    <CardBody>
+                    <CardBody className="card-body">
                         <p>I like to build and maintain the mechanisms that process data and perform
                             actions on websites.</p>
                         <br />
@@ -49,10 +49,10 @@ const Skillstable = () => {
             </Col>
             <Col md='4'>
                 <Card className="card-skills text-center">
-                    <CardHeader>
+                    <CardHeader className="card-header">
                         Web Designer
                     </CardHeader>
-                    <CardBody>
+                    <CardBody className="card-body">
                         <p>I like to make unique yet user friendly web designs.</p>
                         <br />
                         <p className="card-text">Things I design:</p>

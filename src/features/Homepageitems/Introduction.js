@@ -11,7 +11,7 @@ const Introduction = () => {
                 <h3 className="bodyh3">Let me introduce myself</h3>
                 <br/>
                 <p>I'm a Software Developer from Winnipeg, Canada.<br/>I have serious passion for designing & creating interactive websites. <br/>I create clean, professional, functional websites.</p>
-                <p><a className="textlink" href="/contact">Let's make something special.</a></p>
+                <p><a className="textlink" href="contact">Let's make something special.</a></p>
             </Col>
         </Row>
     );

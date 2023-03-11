@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Roboto|Pacifico');
+
 .App {
   text-align: center;
 }
@@ -7,10 +9,27 @@
   pointer-events: none;
 }
 
+.bodyText {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: large;
+  color: black;
+  text-align: start;
+}
+
+h1 {
+  font-family: "Pacifico", "Open Sans", sans-serif;
+}
+
+.bodyh2, .bodyh3 {
+  font-family: "Ubuntu", "Open Sans", "Pacifico";
+  color: rgb(103, 31, 112);
+}
+
 /* HEADER */
 
 #nameHeader {
-  color: rgb(129, 50, 123);
+  color: rgb(103, 31, 112);
+  text-decoration: none;
 }
 
 #Logo {
@@ -32,9 +51,6 @@
   border-bottom: 1px solid rgb(27, 26, 26);
 } */
 
-.bodyText {
-  text-align: start;
-}
 
 
 /* FOOTER */

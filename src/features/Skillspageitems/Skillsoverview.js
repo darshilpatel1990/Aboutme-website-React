@@ -11,8 +11,8 @@ const Skillsoverview = () => {
                     <p>Since beginning my journey as Software Developer, I have built some websites for local businesses as freelancer.</p>
                     <p>I create unique, successful, responsive websites that are fast, user-friendly. The main area of my expertise is front-end development with JavaScript, HTML, CSS, building small to medium websites and mobile apps.</p>
                     <p>I also have some back-end developer experience with Python, SQL and DevOps.</p>
-                    <p>Visit my <a className="textlink" href="https://www.linkedin.com/in/darshil-patel-7b7611252/">LinkedIn</a> profile for more
-                        details or <a className="textlink" href="contactme.html">contact</a> me.</p>
+                    <p>Visit my <a className="textlink" href="https://www.linkedin.com/in/darshil-patel-7b7611252/" target="_blank">LinkedIn</a> profile for more
+                        details or <a className="textlink" href="/contact">contact</a> me.</p>
                 </div>
             </Col>
             <Col xs='12' md='6'>

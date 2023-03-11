@@ -20,10 +20,11 @@ const Header = () => {
             <NavbarBrand className='ms-5' href='/'>
                 <Row>
                     <Col>
-                        <img src={Whitelogo} alt='logo' id='Logo' className='float-start' />
+                        <a href='/'><img src={Whitelogo} alt='logo' id='Logo' className='float-start' />
+                        </a>
                     </Col>
                     <Col>
-                        <h1 id='nameHeader' className='mt-3'>Darshil Patel</h1>
+                        <h1 className='mt-3'><a href='/' id='nameHeader'>Darshil Patel</a></h1>
                     </Col>
                 </Row>
             </NavbarBrand>
