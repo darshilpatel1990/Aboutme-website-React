@@ -2,8 +2,8 @@ import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 
 const Skillstable = () => {
     return (
-        <Row className="my-5">
-            <Col md='4'>
+        <Row className="my-5 g-0">
+            <Col md='4' className="mb-2">
                 <Card className="card-skills text-center">
                     <CardHeader className="card-header">
                         Frontend Developer
@@ -25,7 +25,7 @@ const Skillstable = () => {
                     </CardBody>
                 </Card>
             </Col>
-            <Col md='4'>
+            <Col md='4' className="mb-2">
                 <Card className="card-skills text-center">
                     <CardHeader className="card-header">
                         Backend Developer
@@ -47,7 +47,7 @@ const Skillstable = () => {
                     </CardBody>
                 </Card>
             </Col>
-            <Col md='4'>
+            <Col md='4' className="mb-2">
                 <Card className="card-skills text-center">
                     <CardHeader className="card-header">
                         Web Designer

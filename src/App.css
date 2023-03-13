@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  background-color: rgb(249, 246, 238);
 }
 
 .App-logo {
@@ -56,7 +57,7 @@ h1 {
 /* FOOTER */
 
 .site-footer {
-  background-image: linear-gradient(#fad178, rgb(248, 233, 201));
+  background-image: linear-gradient(#fad178, rgb(245, 221, 170));
   padding: 20px 0;
 }
 

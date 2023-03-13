@@ -9,6 +9,10 @@
     color: rgb(55, 55, 146);
 }
 
+.card-body {
+    font-size: 16.5px;
+}
+
 .card-skills {
     height: 100%;
 }

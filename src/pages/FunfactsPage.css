@@ -8,6 +8,10 @@
     height: 5em
 };
 
+#photoDisplay {
+    border-radius: 15px;
+}
+
 #carouselItem {
     height: 400px;
     width: 800px;
