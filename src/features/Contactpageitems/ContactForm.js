@@ -17,7 +17,7 @@ const ContactForm = () => {
             <Col xs='12' className="formHeader">
                 Feel free to reach out to me
             </Col>
-            <Col xs='12' lg='8'>
+            <Col xs='12' lg='7' xl='8'>
                 <Formik
                     initialValues={{
                         firstName: '',
@@ -113,18 +113,19 @@ const ContactForm = () => {
                         </FormGroup>
                         <FormGroup>
                             <Col>
-                                 
+
                             </Col>
                         </FormGroup>
                     </Form>
                 </Formik>
             </Col>
-            <Col xs='12' xl='3' className="mt-2">
-                {/* <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329266.1418347382!2d-97.43302647983859!3d49.85388572660398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73fbf91a2b11%3A0x2b2a1afac6b9ca64!2sWinnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1674365945424!5m2!1sen!2sca"
-                    width="350" height="400" style={{border:0}} allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe> */}
+            <Col xs='12' lg='5' xl='4' className="mt-5">
+                <iframe
+                    className="mapLocation"
+                    title="Google map location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329267.0255744126!2d-97.48248894667996!3d49.85375602000299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73fbf91a2b11%3A0x2b2a1afac6b9ca64!2sWinnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1680809200785!5m2!1sen!2sca" width='380' height='400'
+                >
+                </iframe>
             </Col>
         </Row>
     );

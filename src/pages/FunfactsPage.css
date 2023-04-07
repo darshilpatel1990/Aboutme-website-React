@@ -8,13 +8,13 @@
     height: 5em
 };
 
-#photoDisplay {
+.photoDisplay {
     border-radius: 15px;
 }
 
-#carouselItem {
-    height: 400px;
-    width: 800px;
+.carouselItem {
+    height: 25em;
+    width: 30em;
 }
 
 .imageCRSL {

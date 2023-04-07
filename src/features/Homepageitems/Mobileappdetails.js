@@ -1,33 +1,42 @@
-import { useState } from "react";
-import { Col, Popover, PopoverHeader, PopoverBody, Card, CardImg, CardTitle, CardBody, Button } from "reactstrap";
+import { Row, Col, Card, CardTitle, CardImg } from "reactstrap";
 import mobileapp from '../../app/assets/img/mobileapp.png';
 
 const MobileappDetails = () => {
-    const [popoverOpen, setPopoverOpen] = useState(false);
-
     return (
-        <Col xs='6' lg='3'>
-            <Card id="mobileappCard" className="card-home">
-                <CardImg src={mobileapp} alt="Mobile Application" />
-                <CardBody>
-                    <CardTitle className="card-title">Mobile Application</CardTitle>
-                </CardBody>
-            </Card>
-            <Popover
-                placement="bottom"
-                isOpen={popoverOpen}
-                target="mobileappCard"
-                toggle={() => setPopoverOpen(!popoverOpen)}
-            >
-                <PopoverHeader>
-                    Mobile Application
-                    <Button className="popoverButton offset-3" type="button" onClick={() => setPopoverOpen(false)}>&#x2715;</Button>
-                </PopoverHeader>
-                <PopoverBody>
-                    A mobile app is a software application developed specifically for use on small, wireless computing devices, such as smartphones and tablets, rather than desktop or laptop computers.
-                </PopoverBody>
-            </Popover>
-        </Col>
+        <Row className="m-5">
+            <Col sm='12' md='6'>
+                <Card className="p-4 cardDetail">
+                    <CardImg src={mobileapp} alt="Mobile Application" />
+                </Card>
+            </Col>
+            <Col sm='12' md='6'>
+                <Card className="p-4 cardDetail">
+                    <CardTitle className="mt-2 mb-4">
+                        <h3 className="bodyh3"><i class="fa fa-mobile"></i> Mobile Application</h3>
+                    </CardTitle>
+                    <div className="bodyText">
+                        <p>
+                            A mobile app is a software application developed specifically for use on small, wireless computing devices, such as smartphones and tablets, rather than desktop or laptop computers.
+                        </p>
+                        <p>
+                            Languages and Technologies will be used for development of your Mobile Application :
+                        </p>
+                        <ul>
+                            <li>React Native</li>
+                            <li>JavaScript</li>
+                            <li>Redux</li>
+                            <li>Animation</li>
+                        </ul>
+                        <p>
+                            Mobile apps built in React Native are suitable for both: Iphones&#40;iOS&#41; and Android phones.
+                        </p>
+                        <p>
+                            Nearly, 76% consumers prefer to do shopping on their phone which is quicker and time-saver. Having a mobile application for your business can be a game changer in this fast growing digital industry.
+                        </p>
+                    </div>
+                </Card>
+            </Col>
+        </Row>
     );
 };
 

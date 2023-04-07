@@ -1,8 +1,8 @@
 import { Row, Col } from "reactstrap";
-import FrontendDetails from "./Frontenddetails"
-import BackendDetails from "./Backenddetails";
-import WebdesignDetails from "./Webdesigndetails";
-import MobileappDetails from "./Mobileappdetails";
+import FrontendCard from "./FrontendCard"
+import BackendCard from "./BackendCard";
+import WebdesignCard from "./WebdesignCard";
+import MobileappCard from "./MobileappCard";
 
 const Services = () => {
     return (
@@ -10,10 +10,10 @@ const Services = () => {
             <Col sm='12' className='mb-3'>
                 <h3 className="bodyh3 text-center">Services Provided</h3>
             </Col>
-            <FrontendDetails />
-            <BackendDetails />
-            <WebdesignDetails />
-            <MobileappDetails />
+            <FrontendCard />
+            <BackendCard />
+            <WebdesignCard />
+            <MobileappCard />
         </Row>
     );
 };

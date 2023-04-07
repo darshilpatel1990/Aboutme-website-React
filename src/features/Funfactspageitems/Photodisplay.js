@@ -1,79 +1,60 @@
-import { Row, Col, Carousel, CarouselControl, CarouselItem, CarouselIndicators } from "reactstrap";
-import { useState } from "react";
-import { CarouselItems } from "../../app/shared/Carouselitems";
+import { Row, Col } from "reactstrap";
+import React, { Component } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import nature from '../../app/assets/img/nature.jpg';
+import lakelouise from '../../app/assets/img/lakelouise.JPG';
+import banff from '../../app/assets/img/banff.png';
+import Banfftrip from '../../app/assets/img/Banfftrip.JPG';
 
-const Photodisplay = () => {
-
-    // State for Active index
-    const [activeIndex, setActiveIndex] = useState(0);
-  
-    // State for Animation
-    const [animating, setAnimating] = useState(false);
-
-    const lastItemindex = CarouselItems.length - 1
-
-    // Previous button for Carousel
-    const previousButton = () => {
-        if (animating) return;
-        const nextIndex = (activeIndex === 0) ? lastItemindex : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    };
-
-    // Next button for Carousel
-    const nextButton = () => {
-        if (animating) return;
-        const nextIndex = (activeIndex === lastItemindex) ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    };
-
-    // Carousel Item Data
-    const CarouselItemData = CarouselItems.map((item) => {
+export default class Photodisplay extends Component {
+    render() {
         return (
-            <CarouselItem
-                key={item.src}
-                onExited={() => setAnimating(false)}
-                onExiting={() => setAnimating(true)}
-                id="carouselItem"
-            >
-                <img className="imageCRSL" src={item.src} alt={item.altText} />
-            </CarouselItem>
-        );
-    });
-
-    return (
-        <Row className="my-5">
-            <Col xs='12'>
-                <h3 className="bodyh3 text-center mb-5">Along the way...</h3>
-            </Col>
-            <Col md='8' className="mx-auto">
-                <Carousel
-                    activeIndex={activeIndex}
-                    next={nextButton}
-                    previous={previousButton}
-                >
-                    <CarouselIndicators 
-                        items={CarouselItems}
-                        activeIndex={activeIndex}
-                        onClickHandler={(newIndex) => {
-                            if (animating) return;
-                            setActiveIndex(newIndex);
-                        }}
-                    />
-                    {CarouselItemData}
-                    <CarouselControl 
-                        directionText="Prev"
-                        direction="prev" 
-                        onClickHandler={previousButton} 
-                    />
-                    <CarouselControl 
-                        directionText="Next"
-                        direction="next" 
-                        onClickHandler={nextButton} 
-                    />
-                </Carousel>
-            </Col>
-        </Row>
-    );
+            <Row className="my-5">
+                <Col xs='12'>
+                    <h3 className="bodyh3 text-center mb-5">Along the way...</h3>
+                </Col>
+                <Col xs='11' md='8' className="mx-auto">
+                    <Carousel
+                        showArrows={true}
+                        infiniteLoop={true}
+                        showThumbs={false}
+                        showStatus={false}
+                        autoPlay={true}
+                        interval={3500}
+                        className="pb-5"
+                    >
+                        <div>
+                            <img
+                                src={nature}
+                                alt="nature"
+                                className="carouselItem"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src={lakelouise}
+                                alt="lakelouise"
+                                className="carouselItem"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src={banff}
+                                alt="banff"
+                                className="carouselItem"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src={Banfftrip}
+                                alt="Banfftrip"
+                                className="carouselItem"
+                            />
+                        </div>
+                    </Carousel>
+                </Col>
+            </Row>
+        )
+    };
 };
-
-export default Photodisplay;

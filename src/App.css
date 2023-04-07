@@ -52,7 +52,11 @@ h1 {
   border-bottom: 1px solid rgb(27, 26, 26);
 } */
 
+/* FRONT-END CARD DETAILS */
 
+.cardDetail {
+  height: 100%;
+}
 
 /* FOOTER */
 
