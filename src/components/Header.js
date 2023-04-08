@@ -9,7 +9,7 @@ import {
     Row,
     Col
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Whitelogo from '../app/assets/img/Whitelogo.png';
 
 const Header = () => {
@@ -20,11 +20,11 @@ const Header = () => {
             <NavbarBrand className='ms-5' href='/'>
                 <Row>
                     <Col>
-                        <a href='/'><img src={Whitelogo} alt='logo' id='Logo' className='float-start' />
-                        </a>
+                        <Link to='/'><img src={Whitelogo} alt='logo' id='Logo' className='float-start' />
+                        </Link>
                     </Col>
                     <Col>
-                        <h1 className='mt-3'><a href='/' id='nameHeader'>Darshil Patel</a></h1>
+                        <h1 className='mt-3'><Link to='/' id='nameHeader'>Darshil Patel</Link></h1>
                     </Col>
                 </Row>
             </NavbarBrand>

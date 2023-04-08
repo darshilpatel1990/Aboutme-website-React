@@ -1,9 +1,13 @@
 import { Row, Col, Card, CardTitle, CardImg } from "reactstrap";
 import Frontend_dev from '../../app/assets/img/Frontend_dev.png';
+import { Link } from "react-router-dom";
 
 const FrontendDetails = () => {
     return (
         <Row className="m-5">
+            <Col sm='12' className="backLink mb-3">
+                <Link to="/"><i className="fa fa-angle-left text-dark"> Back</i></Link>
+            </Col>
             <Col sm='12' md='6'>
                 <Card className="p-4 cardDetail">
                     <CardImg src={Frontend_dev} alt="Frontend Development" />
@@ -12,7 +16,7 @@ const FrontendDetails = () => {
             <Col sm='12' md='6'>
                 <Card className="p-4 cardDetail">
                     <CardTitle className="mt-2 mb-4">
-                        <h3 className="bodyh3"><i class="fa fa-code"></i> Front-End Development</h3>
+                        <h3 className="bodyh3"><i className="fa fa-code"></i> Front-End Development</h3>
                     </CardTitle>
                     <div className="bodyText">
                         <p>
@@ -31,7 +35,7 @@ const FrontendDetails = () => {
                         <p>
                             Websites vary in sizes from single page to multiple pages.
                             <br />
-                            Types : 
+                            Types :
                             <ul>
                                 <li>Personal website</li>
                                 <li>Business website</li>

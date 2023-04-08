@@ -1,9 +1,13 @@
 import { Row, Col, Card, CardTitle, CardImg } from "reactstrap";
 import mobileapp from '../../app/assets/img/mobileapp.png';
+import { Link } from "react-router-dom";
 
 const MobileappDetails = () => {
     return (
         <Row className="m-5">
+            <Col sm='12' className="backLink mb-3">
+                <Link to="/"><i className="fa fa-angle-left text-dark"> Back</i></Link>
+            </Col>
             <Col sm='12' md='6'>
                 <Card className="p-4 cardDetail">
                     <CardImg src={mobileapp} alt="Mobile Application" />
@@ -12,7 +16,7 @@ const MobileappDetails = () => {
             <Col sm='12' md='6'>
                 <Card className="p-4 cardDetail">
                     <CardTitle className="mt-2 mb-4">
-                        <h3 className="bodyh3"><i class="fa fa-mobile"></i> Mobile Application</h3>
+                        <h3 className="bodyh3"><i className="fa fa-mobile"></i> Mobile Application</h3>
                     </CardTitle>
                     <div className="bodyText">
                         <p>
