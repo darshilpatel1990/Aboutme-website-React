@@ -8,17 +8,17 @@ const MobileappDetails = () => {
             <Col sm='12' className="backLink mb-3">
                 <Link to="/"><i className="fa fa-angle-left text-dark"> Back</i></Link>
             </Col>
-            <Col sm='12' md='6'>
+            <Col sm='12' md='5' lg='4'>
                 <Card className="p-4 cardDetail">
                     <CardImg src={mobileapp} alt="Mobile Application" />
                 </Card>
             </Col>
-            <Col sm='12' md='6'>
+            <Col sm='12' md='7' lg='8'>
                 <Card className="p-4 cardDetail">
                     <CardTitle className="mt-2 mb-4">
                         <h3 className="bodyh3"><i className="fa fa-mobile"></i> Mobile Application</h3>
                     </CardTitle>
-                    <div className="bodyText">
+                    <div className="serviceText">
                         <p>
                             A mobile app is a software application developed specifically for use on small, wireless computing devices, such as smartphones and tablets, rather than desktop or laptop computers.
                         </p>

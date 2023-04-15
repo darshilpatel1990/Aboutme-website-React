@@ -40,7 +40,7 @@ h1 {
 
 #navbar {
   background-color: #fad178;
-  padding: 25px;
+  padding: 10px;
 }
 
 .nav-link {
@@ -52,11 +52,11 @@ h1 {
   border-bottom: 1px solid rgb(27, 26, 26);
 } */
 
-/* FRONT-END CARD DETAILS */
+/* CARD DETAILS */
 
-.cardDetail {
+/* .cardDetail {
   height: 100%;
-}
+} */
 
 .backLink {
   font-family: "Roboto", "Open Sans", sans-serif;
@@ -64,11 +64,18 @@ h1 {
   text-align: start;
 }
 
+.serviceText {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 17px;
+  color: black;
+  text-align: start;
+}
+
 /* FOOTER */
 
 .site-footer {
   background-image: linear-gradient(#fad178, rgb(245, 221, 170));
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .linkContent {

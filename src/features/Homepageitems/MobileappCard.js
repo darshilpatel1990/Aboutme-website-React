@@ -9,8 +9,8 @@ const MobileappCard = () => {
     }
 
     return (
-        <Col xs='6' lg='3'>
-            <Card id="mobileappCard" className="card-home" onClick={routeChange}>
+        <Col xs='6' lg='3' className="mb-3">
+            <Card className="card-home" onClick={routeChange}>
                 <CardImg src={mobileapp} alt="Mobile Application" />
                 <CardBody>
                     <CardTitle className="card-title">Mobile Application</CardTitle>

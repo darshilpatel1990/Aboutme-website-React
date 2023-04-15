@@ -9,8 +9,8 @@ const BackendCard = () => {
     }
 
     return (
-        <Col xs='6' lg='3'>
-            <Card id="backendCard" className="card-home" onClick={routeChange}>
+        <Col xs='6' lg='3' className="mb-3">
+            <Card className="card-home" onClick={routeChange}>
                 <CardImg src={back_end_server} alt="Backend Development" />
                 <CardBody>
                     <CardTitle className="card-title">Back-End Development</CardTitle>

@@ -1,5 +1,6 @@
 #imgProfile {
-    border: 0.1em solid rgb(103, 31, 112);;
+    border: 0.1em solid rgb(103, 31, 112);
+    ;
     border-radius: 5%;
     width: 16em;
     height: 16em;
@@ -11,28 +12,18 @@
 }
 
 .card-home {
-    padding: 1px;
+    padding: 3px;
     height: 100%;
-}
-
-.card-home {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-home:hover {
-    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
 }
 
-#nucampWeb {
+.workImg {
     border-radius: 8px;
     width: 25em;
     height: 32em;
-}
-
-#nucampWeb {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#nucampWeb:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }

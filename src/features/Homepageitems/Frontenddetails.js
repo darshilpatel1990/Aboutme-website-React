@@ -8,17 +8,17 @@ const FrontendDetails = () => {
             <Col sm='12' className="backLink mb-3">
                 <Link to="/"><i className="fa fa-angle-left text-dark"> Back</i></Link>
             </Col>
-            <Col sm='12' md='6'>
+            <Col sm='12' md='5' lg='4'>
                 <Card className="p-4 cardDetail">
                     <CardImg src={Frontend_dev} alt="Frontend Development" />
                 </Card>
             </Col>
-            <Col sm='12' md='6'>
+            <Col sm='12' md='7' lg='8'>
                 <Card className="p-4 cardDetail">
                     <CardTitle className="mt-2 mb-4">
                         <h3 className="bodyh3"><i className="fa fa-code"></i> Front-End Development</h3>
                     </CardTitle>
-                    <div className="bodyText">
+                    <div className="serviceText">
                         <p>
                             Front-end web development is the development of the graphical user interface of a website that focuses on what users see on their end.
                         </p>

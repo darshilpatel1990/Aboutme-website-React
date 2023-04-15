@@ -9,8 +9,8 @@ const WebdesignCard = () => {
       }
 
     return (
-        <Col xs='6' lg='3'>
-            <Card id="webdesignCard" className="card-home" onClick={routeChange}>
+        <Col xs='6' lg='3' className="mb-3">
+            <Card className="card-home" onClick={routeChange}>
                 <CardImg src={web_design} alt="Web Desinging" />
                 <CardBody>
                     <CardTitle className="card-title">Web Designing</CardTitle>

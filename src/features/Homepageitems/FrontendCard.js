@@ -10,8 +10,8 @@ const FrontendCard = () => {
     }
 
     return (
-        <Col xs='6' lg='3'>
-            <Card id="frontendCard" className="card-home" onClick={routeChange}>
+        <Col xs='6' lg='3' className="mb-3">
+            <Card className="card-home" onClick={routeChange}>
                 <CardImg src={Frontend_dev} alt="Frontend Development" />
                 <CardBody>
                     <CardTitle className="card-title">Front-End Development</CardTitle>

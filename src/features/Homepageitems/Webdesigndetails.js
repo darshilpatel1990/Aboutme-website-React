@@ -8,17 +8,17 @@ const WebdesignDetails = () => {
             <Col sm='12' className="backLink mb-3">
                 <Link to="/"><i className="fa fa-angle-left text-dark"> Back</i></Link>
             </Col>
-            <Col sm='12' md='6'>
+            <Col sm='12' md='5' lg='4'>
                 <Card className="p-4 cardDetail">
                     <CardImg src={web_design} alt="Web Design" />
                 </Card>
             </Col>
-            <Col sm='12' md='6'>
+            <Col sm='12' md='7' lg='8'>
                 <Card className="p-4 cardDetail">
                     <CardTitle className="mt-2 mb-4">
                         <h3 className="bodyh3"><i className="fa fa-pencil"></i> Web Design</h3>
                     </CardTitle>
-                    <div className="bodyText">
+                    <div className="serviceText">
                         <p>
                             Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.
                         </p>
